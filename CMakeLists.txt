@@ -38,12 +38,6 @@ message("TOP_LEVEL_SOURCE_FILES: ${TOP_LEVEL_SOURCE_FILES}")
 # target for STM32 Blue Pill (Arm Cortex-M3), even though code is for Arm Cortex-M0 (armv6-m)
 set(CMAKE_SYSTEM_PROCESSOR "armv7-m" PARENT_SCOPE)
 
-# include all functions plus fast divide and square root 
-set(
-    CMAKE_ASM_FLAGS 
-    "${CMAKE_ASM_FLAGS} -Dinclude_faster=1 -Dinclude_conversions=1 -Dinclude_scientific=1"
-)
-
 # include directories
 include_directories(    
     ${INCLUDE_DIRS} 
@@ -53,3 +47,9 @@ include_directories(
 
 # expose include directories to parent cmake
 target_include_directories(qfplib PUBLIC ${TOP_LEVEL_INCLUDE_DIRS})
+
+# include all functions plus fast divide and square root. not required, all are selected by default.
+# set(
+#     CMAKE_ASM_FLAGS 
+#     "${CMAKE_ASM_FLAGS} -Dinclude_faster=1 -Dinclude_conversions=1 -Dinclude_scientific=1"
+# )
