@@ -1,0 +1,21 @@
+{
+    "name": "qfplib",
+    "frameworks": "*",
+    "platforms": "ststm32",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lupyuen/qfplib"
+    },
+    "description": "Stub for compiling qfplib under PlatformIO",
+    "build": {        
+        "unflags": [
+            "-fno-rtti",
+            "-fno-threadsafe-statics"
+        ],
+        "flags": [
+        ],
+        "srcFilter": [
+            "+<build/*.o>"
+        ]
+    }
+}
