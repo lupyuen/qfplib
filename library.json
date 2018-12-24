@@ -9,13 +9,11 @@
     "description": "Stub for compiling qfplib under PlatformIO",
     "build": {        
         "unflags": [
-            "-fno-rtti",
-            "-fno-threadsafe-statics"
         ],
         "flags": [
         ],
         "srcFilter": [
-            "+<build/*.o>"
+            "+<./*.S>"
         ]
     }
 }
