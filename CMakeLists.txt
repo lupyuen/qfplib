@@ -21,11 +21,11 @@ message("QFPLIB_DIR: ${QFPLIB_DIR}")
 
 # find sources and headers
 set(TOP_LEVEL_INCLUDE_DIRS "${QFPLIB_DIR}")
-# RECURSIVE_FIND_FILE(TOP_LEVEL_SOURCE_FILES "${QFPLIB_DIR}" "*.s")
+# RECURSIVE_FIND_FILE(TOP_LEVEL_SOURCE_FILES "${QFPLIB_DIR}" "*.S")
 set(
     TOP_LEVEL_SOURCE_FILES
-    "qfpio.s"
-    "qfplib.s"
+    "qfpio.S"
+    "qfplib.S"
 )
 
 # create library
