@@ -3,9 +3,9 @@
 project(qfplib)
 
 # enable verbose log. Must be after project()
-set(CMAKE_VERBOSE_MAKEFILE ON)
-set(ENV{VERBOSE} "1")
-message("VERBOSE: $ENV{VERBOSE}")
+# set(CMAKE_VERBOSE_MAKEFILE ON)
+# set(ENV{VERBOSE} "1")
+# message("VERBOSE: $ENV{VERBOSE}")
 
 # apply codal build settings
 include("${CODAL_UTILS_LOCATION}")
